@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[left=0.70in,right=0.70in,top=0.50in,bottom=0.50in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ---------- Section formatting ----------
+% Use \section (not \section*) so titleformat applies properly
+\titleformat{\section}
+  {\vspace{2pt}\large\bfseries\uppercase}
+  {}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+
+% ---------- List spacing ----------
+\setlist[itemize]{leftmargin=1.5em, itemsep=1pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
+% ---------- Helpers ----------
+\newcommand{\roleline}[2]{\textbf{#1} \hfill {\small\textit{#2}}}
+
+\newcommand{\eduspace}{\vspace{3pt}}
+
+\newcommand{\eduentry}[3]{%
+  \textbf{#1}\hfill \textbf{#2}\\
+  \textit{#3}\par
+}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{center}
+  {\Huge \textbf{Rajat Nimje}}\\[4pt]
+  {\large Data Analyst \ $|$ \ B.Tech Computer Engineering}\\[5pt]
+  \small
+  Vinoba Bhave Nagar, Nagpur 440017 \;$|$\;
+  \href{mailto:rajatnimje434@gmail.com}{rajatnimje434@gmail.com} \;$|$\;
+  +91 9049478926 \;$|$\;
+  \href{https://www.linkedin.com/in/connect-with-rajat-nimje/}{LinkedIn} \;$|$\;
+  \href{https://github.com/rajat2003fg}{GitHub}
+\end{center}
+
+\vspace{2pt}
+
+% ================= SUMMARY =================
+\section{Summary}
+Aspiring Data Analyst and B.Tech (Computer Engineering) graduate with strong fundamentals in
+\textbf{SQL, Excel, Power BI, and Python}.
+Experienced in \textbf{data cleaning, EDA, KPI reporting, and visualization} using Pandas and Matplotlib
+to produce actionable insights. Seeking an \textbf{entry-level Data Analyst / BI Analyst} opportunity.
+
+% ================= SKILLS =================
+\section{Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Analytics \& BI:}  & SQL, Excel (Pivot Tables, VLOOKUP/XLOOKUP), Power BI, Tableau \\[2pt]
+\textbf{Python:}           & Pandas, NumPy, Matplotlib (EDA, data cleaning, aggregation) \\[2pt]
+\textbf{Tools:}            & Git, GitHub, n8n \\[2pt]
+\textbf{Web (basic):}      & HTML, CSS \\
+\end{tabularx}
+
+% ================= PROJECTS =================
+\section{Projects}
+
+\roleline{E-Commerce Customer Behavior \& Shopping Trends Analysis}{Python, Pandas, Matplotlib}
+\begin{itemize}
+  \item Analyzed \textbf{3,900+ transactions} to identify revenue drivers, seasonal trends, and high-value categories.
+  \item Built segmentation views to compare spend patterns across demographics using pivot-style summaries.
+  \item Created box plots and distribution charts to highlight outliers and product/category variance.
+  \item Summarized insights into clear, decision-focused observations for stakeholder reporting.
+\end{itemize}
+
+\vspace{2pt}
+\roleline{Statistical Profiling of Global Book Sales}{Python, Pandas, Matplotlib}
+\begin{itemize}
+  \item Cleaned and standardized records by handling nulls and anomalies using vectorized Pandas operations.
+  \item Performed multi-stage aggregations to rank publisher performance and analyze unit-sales distributions.
+  \item Visualized trends and long-tail behavior using charts that highlight top contributors and outliers.
+  \item Structured outputs into reusable tables suitable for BI dashboard integration.
+\end{itemize}
+
+\vspace{2pt}
+\roleline{AI-Powered WhatsApp Automation for Restaurant Order Management}{n8n, Gemini LLM}
+\begin{itemize}
+  \item Built a no-code WhatsApp chatbot workflow to automate order placement and handle customer FAQs.
+  \item Designed conversation flows, intent routing, and automated responses to reduce manual handling.
+  \item Focused on consistent customer experience and faster query resolution through automation.
+\end{itemize}
+
+% ================= EDUCATION =================
+\section{Education}
+\eduentry{B.Tech in Computer Engineering}{2021 -- 2025}{Smt. Radhikatai Pandav College of Engineering, Nagpur}
+\eduspace
+\eduentry{Higher Secondary Education (Class XII)}{2020 -- 2021}{Shri Ramswami Junior College, Nagpur}
+\eduspace
+\eduentry{Secondary Education (Class X)}{2018 -- 2019}{New English High School, Nagpur}
+
+% ================= CERTIFICATIONS =================
+\section{Certifications}
+\begin{itemize}
+  \item \textbf{Cloud Computing} --- NPTEL (2025)
+\end{itemize}
+
+% ================= ADDITIONAL =================
+\section{Additional}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Languages:} & Hindi, English, Marathi \\[2pt]
+\textbf{Hobbies:}   & Bike riding, trekking \\
+\end{tabularx}
+
+\end{document}
