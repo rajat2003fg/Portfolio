@@ -1,30 +1,33 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10.5pt,a4paper]{article}
 
 % ---------- Packages ----------
-\usepackage[left=0.70in,right=0.70in,top=0.50in,bottom=0.50in]{geometry}
+\usepackage[left=0.7in,right=0.7in,top=0.5in,bottom=0.45in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
+\usepackage{xcolor}
+
+\definecolor{navyblue}{HTML}{1A3C5E}
+\definecolor{ruleblue}{HTML}{2A5C8A}
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
+\setlength{\parskip}{1pt}
 
 % ---------- Section formatting ----------
-% Use \section (not \section*) so titleformat applies properly
 \titleformat{\section}
-  {\vspace{2pt}\large\bfseries\uppercase}
-  {}{0pt}{}[\vspace{1pt}\titlerule]
+  {\vspace{3pt}\normalsize\bfseries\color{navyblue}\uppercase}
+  {}{0pt}{}[\vspace{2pt}{\color{ruleblue}\titlerule[0.6pt]}]
 \titlespacing*{\section}{0pt}{7pt}{5pt}
 
 % ---------- List spacing ----------
-\setlist[itemize]{leftmargin=1.5em, itemsep=1pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize]{leftmargin=1.4em, itemsep=1.5pt, topsep=2pt, parsep=0.5pt, partopsep=0pt}
 
 % ---------- Helpers ----------
-\newcommand{\roleline}[2]{\textbf{#1} \hfill {\small\textit{#2}}}
-
-\newcommand{\eduspace}{\vspace{3pt}}
+\newcommand{\roleline}[2]{%
+  \textbf{#1} \hfill {\small\itshape\color{gray}#2}%
+}
 
 \newcommand{\eduentry}[3]{%
   \textbf{#1}\hfill \textbf{#2}\\
@@ -35,9 +38,8 @@
 
 % ================= HEADER =================
 \begin{center}
-  {\Huge \textbf{Rajat Nimje}}\\[4pt]
-  {\large Data Analyst \ $|$ \ B.Tech Computer Engineer $|$ Vinoba Bhave Nagar, Nagpur}\\[6pt]
-  
+  {\huge \textbf{\color{navyblue}Rajat Nimje}}\\[4pt]
+  {\normalsize Automation \& Data Analyst \ $|$ \ B.Tech Computer Engineering \ $|$ \ Nagpur, India}\\[5pt]
   \href{mailto:rajatnimje434@gmail.com}{rajatnimje434@gmail.com} \;$|$\;
   +91 9049478926 \;$|$\;
   \href{https://www.linkedin.com/in/connect-with-rajat-nimje/}{LinkedIn} \;$|$\;
@@ -45,71 +47,71 @@
   \href{https://rajat2003fg.github.io/Portfolio/}{Portfolio}
 \end{center}
 
-\vspace{2pt}
+\vspace{3pt}
 
 % ================= SUMMARY =================
-\section{Summary}
-Proficient Data Analyst and B.Tech (Computer Engineering) graduate with strong fundamentals in
-\textbf{SQL, Excel, Power BI, and Python}.
-Experienced in \textbf{data cleaning, EDA, KPI reporting, and visualization} using Pandas and Matplotlib
-to produce actionable insights. Seeking an \textbf{entry-level Data Analyst / BI Analyst} opportunity.
+\section{Professional Summary}
+Fast-learning B.Tech Computer Engineering graduate with strong hands-on skills in
+\textbf{Python (Pandas, NumPy)}, \textbf{SQL}, \textbf{advanced Excel}, and \textbf{data automation workflows}.
+Experienced in building dashboards, writing optimized queries, processing data via APIs, and
+automating reporting pipelines using tools like n8n and Gemini LLM.
+Eager to contribute to \textbf{CoinDCX's Automation Team} by building dashboards, maintaining
+data workflows, and delivering accurate, insight-driven reports.
 
 % ================= SKILLS =================
-\section{Skills}
+\section{Technical Skills}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{Analytics \& BI:}  & SQL, Excel (Pivot Tables, VLOOKUP/XLOOKUP), Power BI, Tableau \\[2pt]
-\textbf{Python:}           & Pandas, NumPy, Matplotlib (EDA, data cleaning, aggregation) \\[2pt]
-\textbf{Tools:}            & Git, GitHub, n8n \\[2pt]
-\textbf{Web (basic):}      & HTML, CSS \\
+\textbf{SQL:}              & Complex queries, joins, aggregations, subqueries, data extraction \& validation \\[2pt]
+\textbf{Python:}           & Pandas, NumPy, Matplotlib --- data processing, transformation, automation, regex \\[2pt]
+\textbf{Excel:}            & Pivot Tables, INDEX/MATCH, VLOOKUP/XLOOKUP, IF formulas, dashboards, report automation \\[2pt]
+\textbf{BI \& Dashboards:} & Power BI, Tableau (Apache Superset concepts: SQL-backed charts, dashboard publishing) \\[2pt]
+\textbf{APIs \& Automation:} & REST API data fetching \& processing, n8n workflow automation, ETL pipelines \\[2pt]
+\textbf{Tools:}            & Git, GitHub \\
 \end{tabularx}
 
 % ================= PROJECTS =================
 \section{Projects}
 
-\roleline{E-Commerce Customer Behavior \& Shopping Trends Analysis}{Python, Pandas, Matplotlib}
+\roleline{E-Commerce Customer Behavior \& Shopping Trends Analysis}{Python, Pandas, SQL, Excel, Power BI}
 \begin{itemize}
-  \item Analyzed \textbf{3,900+ transactions} to identify revenue drivers, seasonal trends, and high-value categories.
-  \item Built segmentation views to compare spend patterns across demographics using pivot-style summaries.
-  \item Created box plots and distribution charts to highlight outliers and product/category variance.
-  \item Summarized insights into clear, decision-focused observations for stakeholder reporting.
+  \item Wrote \textbf{optimized SQL queries} to extract and aggregate \textbf{3,900+ transaction records}; applied data cleaning including null handling, deduplication, and anomaly detection.
+  \item Built \textbf{interactive dashboards} in Power BI and \textbf{advanced Excel reports} with Pivot Tables, XLOOKUP, and dynamic formulas to track revenue, seasonal trends, and demographic KPIs.
+  \item Automated data transformation pipeline in Python/Pandas to process and load data --- eliminating manual refresh steps and ensuring \textbf{consistent, accurate reporting}.
+  \item Structured outputs as reusable datasets suitable for \textbf{Apache Superset-style} SQL-backed visualization layers.
 \end{itemize}
 
-\vspace{2pt}
-\roleline{Statistical Profiling of Global Book Sales}{Python, Pandas, Matplotlib}
+\vspace{3pt}
+\roleline{Statistical Profiling of Global Book Sales}{Python, Pandas, NumPy, Excel}
 \begin{itemize}
-  \item Cleaned and standardized records by handling nulls and anomalies using vectorized Pandas operations.
-  \item Performed multi-stage aggregations to rank publisher performance and analyze unit-sales distributions.
-  \item Visualized trends and long-tail behavior using charts that highlight top contributors and outliers.
-  \item Structured outputs into reusable tables suitable for BI dashboard integration.
+  \item Designed a \textbf{data processing and automation workflow}: cleaned, standardized, and validated records using vectorized Pandas operations and regex normalization.
+  \item Built \textbf{Excel dashboards with complex formulas} (INDEX/MATCH, IF nesting, Pivot Tables) for publisher performance ranking and unit-sales distribution analysis.
+  \item Produced governance-ready summary tables enabling reproducible reporting and \textbf{fast dashboard refresh} without manual intervention.
 \end{itemize}
 
-\vspace{2pt}
-\roleline{AI-Powered WhatsApp Automation for Restaurant Order Management}{n8n, Gemini LLM}
+\vspace{3pt}
+\roleline{AI-Powered WhatsApp Automation for Restaurant Order Management}{n8n, Gemini LLM, REST API}
 \begin{itemize}
-  \item Built a no-code WhatsApp chatbot workflow to automate order placement and handle customer FAQs.
-  \item Designed conversation flows, intent routing, and automated responses to reduce manual handling.
-  \item Focused on consistent customer experience and faster query resolution through automation.
+  \item Integrated \textbf{REST APIs} (WhatsApp Business API, Gemini LLM endpoint) via n8n to fetch, process, and route real-time customer data --- demonstrating practical API data integration skills.
+  \item Built \textbf{end-to-end automation workflows} to capture unstructured inputs, transform them into structured records, and trigger automated responses --- reducing manual handling to zero.
+  \item Designed monitoring logic to track \textbf{data accuracy and workflow consistency} across live automation cycles.
 \end{itemize}
 
 % ================= EDUCATION =================
 \section{Education}
 \eduentry{B.Tech in Computer Engineering}{2021 -- 2025}{Smt. Radhikatai Pandav College of Engineering, Nagpur}
-\eduspace
+\edusp
 \eduentry{Higher Secondary Education (Class XII)}{2020 -- 2021}{Shri Ramswami Junior College, Nagpur}
-\eduspace
+\edusp
 \eduentry{Secondary Education (Class X)}{2018 -- 2019}{New English High School, Nagpur}
 
-% ================= CERTIFICATIONS =================
-\section{Certifications}
-\begin{itemize}
-  \item \textbf{Cloud Computing} --- NPTEL (2025)
-\end{itemize}
-
-% ================= ADDITIONAL =================
-\section{Additional}
+% ================= CERTIFICATIONS & ADDITIONAL =================
+\vspace{-3pt}
+\section{Certifications \& Additional}
+\vspace{-2pt}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{Languages:} & Hindi, English, Marathi \\[2pt]
-\textbf{Hobbies:}   & Bike riding, trekking \\
+\textbf{Certification:} & Cloud Computing --- NPTEL (2025) \\[2pt]
+\textbf{Languages:}     & Hindi, English, Marathi \\[2pt]
+\textbf{Interests:}     & Bike riding, trekking \\
 \end{tabularx}
 
 \end{document}
